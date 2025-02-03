@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/App.css'; // Đường dẫn tương đối tới CSS
 
+
 class Person {
   constructor(name, age) {
     this.name = name;
