@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students Detail</title>
+    <!-- Liên kết Font Awesome offline -->
+    <link rel="stylesheet" href="font-awesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <style>
+      header {
+        background-color: #f9b996;
+        margin-bottom: 0px;
+      }
+
+      .navbar-nav .nav-link {
+        color: rgb(255, 138, 4) !important;
+        font-weight: bold;
+        margin-left: 0px;
+      }
+      .navbar {
+        margin-left: 0px;
+      }
+
+      .search-input input {
+        width: 300px;
+        height: 35px;
+      }
+
+      .image-container {
+        text-align: center;
+        background-color: #ee7535;
+        padding: 20px 0;
+      }
+      .image-container img {
+        width: 100%;
+        max-width: 1350px;
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 80px;
+      }
+
+      .student-card {
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .student-card img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      .student-card h5 {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+      }
+
+      .student-card p {
+        margin-bottom: 5px;
+        font-size: 1rem;
+      }
+
+      .student-card button {
+        margin-top: 10px;
+        background-color: #f76c23;
+        color: white;
+        border: none;
+      }
+
+      .student-card button:hover {
+        background-color: #e06a1d;
+      }
+
+      .location-text {
+        font-size: 1rem;
+        margin-top: 10px;
+      }
+      .footer {
+        background-color: coral;
+      }
+      .social-icons {
+        font-size: 40px;
+        padding-right: 40px;
+      }
+      .breadcrumb-item {
+        background-color: #f0f0f0;
+        padding: 0.3rem 0.6rem;
+        border-radius: 3px;
+        display: inline-block;
+      }
+
+      .breadcrumb-item a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      .breadcrumb-item.active a {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section with Logo, Navbar, and Search -->
+    <header class="py-3">
+      <div class="container d-flex justify-content-between">
+        <!-- Logo -->
+        <img src="images/FPT_logo.png" alt="Logo" width="200" />
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-home me-2"></i> Trang Chủ
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-book me-2"></i> Ngành học
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-user-graduate me-2"></i> Tuyển sinh
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-user me-2"></i> Sinh viên
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Search Bar -->
+        <div class="search-input d-flex align-items-center">
+          <label for="search" class="me-2 text-black">Search</label>
+          <input type="text" id="search" class="form-control" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Image Section -->
+    <div class="image-container">
+      <img src="images/FPTStudent.jpg" alt="FPT Students" />
+    </div>
+
+    <!-- Active page -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Students</a></li>
+      </ol>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container mt-5">
+      <h2 class="text-center mb-5">Students Detail</h2>
+
+      <div class="row">
+        <!-- Student 1 -->
+        <div class="col-md-6 mb-4">
+          <div class="student-card">
+            <img src="images/Studen1.png" alt="Student 1" />
+            <h5>DE160132</h5>
+            <p>Nguyễn Hữu Quốc Khánh</p>
+            <p class="location-text">DaNang</p>
+
+            <div>
+              <label for="absent1" class="me-2">Absent</label>
+              <input type="radio" id="absent1" name="status1" />
+              <label for="present1" class="ms-3 me-2">Present</label>
+              <input type="radio" id="present1" name="status1" />
+            </div>
+            <button class="btn btn-primary mt-3">Submit</button>
+          </div>
+        </div>
+
+        <!-- Student 2 -->
+        <div class="col-md-6 mb-4">
+          <div class="student-card">
+            <img src="images/Student2.png" alt="Student 2" />
+            <h5>DE160137</h5>
+            <p>Choy Vĩnh Thiện</p>
+            <p class="location-text">QuangNam</p>
+
+            <div>
+              <label for="absent2" class="me-2">Absent</label>
+              <input type="radio" id="absent2" name="status2" />
+              <label for="present2" class="ms-3 me-2">Present</label>
+              <input type="radio" id="present2" name="status2" />
+            </div>
+            <button class="btn btn-primary mt-3">Submit</button>
+          </div>
+        </div>
+
+        <!-- Student 3 -->
+        <div class="col-md-6 mb-4">
+          <div class="student-card">
+            <img src="images/Student3.png" alt="Student 3" />
+            <h5>DE160547</h5>
+            <p>Đỗ Nguyên Phúc</p>
+            <p class="location-text">QuangNam</p>
+
+            <div>
+              <label for="absent3" class="me-2">Absent</label>
+              <input type="radio" id="absent3" name="status3" />
+              <label for="present3" class="ms-3 me-2">Present</label>
+              <input type="radio" id="present3" name="status3" />
+            </div>
+            <button class="btn btn-primary mt-3">Submit</button>
+          </div>
+        </div>
+
+        <!-- Student 4 -->
+        <div class="col-md-6 mb-4">
+          <div class="student-card">
+            <img src="images/Student4.png" alt="Student 4" />
+            <h5>DE170089</h5>
+            <p>Lê Hoàng Minh</p>
+            <p class="location-text">DaNang</p>
+
+            <div>
+              <label for="absent4" class="me-2">Absent</label>
+              <input type="radio" id="absent4" name="status4" />
+              <label for="present4" class="ms-3 me-2">Present</label>
+              <input type="radio" id="present4" name="status4" />
+            </div>
+            <button class="btn btn-primary mt-3">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class="footer py-3 mt-5">
+      <div class="container d-flex justify-content-between">
+        <h2>Our Address</h2>
+        <p class="mt-4">@Copyright 2023</p>
+
+        <!-- icons -->
+        <div class="social-icons">
+          <a href="#" target="_blank" title="Google+"
+            ><i class="fab fa-google-plus-g" style="color: black"></i
+          ></a>
+          <a href="#" target="_blank" title="Facebook"
+            ><i class="fab fa-facebook-f" style="color: black"></i
+          ></a>
+          <a href="#" target="_blank" title="LinkedIn"
+            ><i class="fab fa-linkedin-in" style="color: black"></i
+          ></a>
+          <a href="#" target="_blank" title="Twitter"
+            ><i class="fab fa-twitter" style="color: black"></i
+          ></a>
+          <a href="#" target="_blank" title="YouTube"
+            ><i class="fab fa-youtube" style="color: black"></i
+          ></a>
+          <a href="mailto:fptudn@fpt.edu.vn" target="_blank" title="Gmail"
+            ><i class="fab fa-google" style="color: black"></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- Thêm phần thông tin địa chỉ vào footer -->
+      <div class="container">
+        <div class="address-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Khu đô thị FPT Đà Nẵng</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+84023111111</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-fax"></i>
+            <span>+852 8765 4321</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span
+              ><a href="mailto:fptudn@fpt.edu.vn">fptudn@fpt.edu.vn</a></span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
