@@ -8,7 +8,6 @@ import Exercise4 from "./components/Exercise4";
 import Exercise5 from "./components/Exercise5";
 import Exercise6 from "./components/Exercise6";
 import Exercise7 from "./components/Exercise7";
-import Exercise8 from "./components/Exercise8";
 import Exercise9 from "./components/Exercise9";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -23,7 +22,6 @@ root.render(
       <Exercise5 />
       <Exercise6 />
       <Exercise7 />
-      <Exercise8 />
       <Exercise9 />
 
 
