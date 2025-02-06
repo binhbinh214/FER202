@@ -7,7 +7,7 @@ import image5 from "../assets/images/pizza5.jpg";
 
 function CarouselComponent() {
   return (
-    <Carousel id="carouselExample">
+    <Carousel interval={4000} slide={true} id="carouselExample">
       <Carousel.Item>
         <img className="d-block w-100" src={image1} alt="First slide" />
         <Carousel.Caption>

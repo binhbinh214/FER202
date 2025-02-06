@@ -19,8 +19,7 @@ function NavbarComponent() {
         <Form className="Search d-flex" role="search">
           <FormControl 
           type="search" 
-          placeholder="Search" 
-          aria-label="Search" />
+          placeholder="Search"/>
           <Button variant="danger" type="submit" className="mx-2">
             <i className="fa fa-search"></i>
           </Button>

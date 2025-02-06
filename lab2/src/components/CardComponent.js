@@ -12,7 +12,7 @@ function CardComponent() {
         <Card style={{ width: "18rem" }} className="mx-3 position-relative">
           <Card.Img variant="top" src={menu1} />
           <div
-            className="badge bg-warning text-dark position-absolute top-0 start-0 m-2 px-2 py-1"
+            className="badge bg-warning text-dark position-absolute top-0 start-0"
             style={{ fontSize: "0.9rem" }}
           >
             SALE
@@ -40,7 +40,7 @@ function CardComponent() {
         <Card style={{ width: "18rem" }} className="mx-3 position-relative">
           <Card.Img variant="top" src={menu3} />
           <div
-            className="badge bg-warning text-dark position-absolute top-0 start-0 m-2 px-2 py-1"
+            className="badge bg-warning text-dark position-absolute top-0 start-0 "
             style={{ fontSize: "0.9rem" }}
           >
             NEW
@@ -56,7 +56,7 @@ function CardComponent() {
         <Card style={{ width: "18rem" }} className="mx-3 position-relative">
           <Card.Img variant="top" src={menu4} />
           <div
-            className="badge bg-warning text-dark position-absolute top-0 start-0 m-2 px-2 py-1"
+            className="badge bg-warning text-dark position-absolute top-0 start-0"
             style={{ fontSize: "0.9rem" }}
           >
             SALE
