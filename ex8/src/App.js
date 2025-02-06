@@ -16,7 +16,6 @@ function FlightBookingForm() {
     isFullNameValid: true, 
   });
 
-  // Handle change in form fields
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -152,3 +151,5 @@ function FlightBookingForm() {
 }
 
 export default FlightBookingForm;
+
+
