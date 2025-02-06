@@ -1,7 +1,7 @@
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import 'font-awesome/css/font-awesome.min.css';
+import "font-awesome/css/font-awesome.min.css";
 
 function NavbarComponent() {
   return (
@@ -17,9 +17,7 @@ function NavbarComponent() {
           <Nav.Link href="#">Contact</Nav.Link>
         </Nav>
         <Form className="Search d-flex" role="search">
-          <FormControl 
-          type="search" 
-          placeholder="Search"/>
+          <FormControl type="search" placeholder="Search" />
           <Button variant="danger" type="submit" className="mx-2">
             <i className="fa fa-search"></i>
           </Button>
