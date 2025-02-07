@@ -1,6 +1,6 @@
 import React from 'react';
-import '../App.css'; // Đảm bảo bạn đã có file CSS tương ứng
-import logo from '../images/FPT_logo.png'; // Đường dẫn đến logo
+import '../App.css'; 
+import logo from '../images/FPT_logo.png';
 
 function Card() {
   return (

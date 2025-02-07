@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import logo from '../images/fptulogo.jpg'; // Đường dẫn tới logo FPT
+import logo from '../images/fptulogo.jpg'; 
 
 function SimpleWeb() {
   return (
