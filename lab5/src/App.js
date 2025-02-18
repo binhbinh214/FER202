@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./Components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from "./Components/HomePage";
+import About from "./Components/AboutPage";
+import News from "./Components/NewsPage";
+import Quiz from "./Components/QuizPage";
+import Contact from "./Components/ContactPage";
+import { jsQuizz } from "./Components/data/Quiz_Data";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/quiz" element={<Quiz questions={jsQuizz.questions} />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
+    </>
   );
-}
+};
 
 export default App;

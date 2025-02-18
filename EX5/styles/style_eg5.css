@@ -1,0 +1,93 @@
+header {
+    background-color: #f9b996;
+    margin-bottom: 0px;
+  }
+
+  .navbar-nav .nav-link {
+    color: rgb(255, 138, 4) !important;
+    font-weight: bold;
+    margin-left: 0px;
+  }
+  .navbar {
+    margin-left: 0px;
+  }
+
+  .search-input input {
+    width: 300px;
+    height: 35px;
+  }
+
+  .image-container {
+    text-align: center;
+    background-color: #ee7535;
+    padding: 20px 0;
+  }
+  .image-container img {
+    width: 100%;
+    max-width: 1350px;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  .student-card {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .student-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .student-card h5 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+
+  .student-card p {
+    margin-bottom: 5px;
+    font-size: 1rem;
+  }
+
+  .student-card button {
+    margin-top: 10px;
+    background-color: #f76c23;
+    color: white;
+    border: none;
+  }
+
+  .student-card button:hover {
+    background-color: #e06a1d;
+  }
+
+  .location-text {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .footer {
+    background-color: coral;
+  }
+  .social-icons {
+    font-size: 40px;
+    padding-right: 40px;
+  }
+  .breadcrumb-item {
+    background-color: #f0f0f0;
+    padding: 0.3rem 0.6rem;
+    border-radius: 3px;
+    display: inline-block;
+  }
+
+  .breadcrumb-item a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .breadcrumb-item.active a {
+    color: orange;
+  }

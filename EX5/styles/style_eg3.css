@@ -1,0 +1,25 @@
+.custom-footer {
+    background-color: #c2b3b3;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .grid-box {
+    background-color: #d6d6d6;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+  }
+  .container-fluid {
+    background-color: #e6f0f0;
+    text-align: left;
+    color: black;
+    margin-bottom: 20px;
+  }
+
+  .navbar {
+    background-color: white;
+    color: black;
+  }

@@ -1,0 +1,125 @@
+/* App.css */
+
+/* Thiết lập margin cho container để nội dung không dính vào các cạnh */
+.container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Các card trong danh sách món ăn */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hiệu ứng hover cho card */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Cài đặt ảnh có kích thước cố định và để hiển thị phù hợp */
+.card-img-top {
+  height: 200px; /* Đặt chiều cao cố định cho ảnh */
+  object-fit: cover; /* Đảm bảo ảnh được cắt và phù hợp với kích thước */
+  border-radius: 10px 10px 0 0;
+}
+
+/* Định dạng tiêu đề và phần mô tả */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Mô tả món ăn */
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Định dạng nút "Add to Cart" */
+.btn {
+  background-color: #00ff62a5 !important;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+/* Các phần tử trong giỏ hàng */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.list-group-item button {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.list-group-item button:hover {
+  background-color: #c82333;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.clear-cart-btn {
+  background-color: #ffc107;
+  border: none;
+  color: #060505;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.clear-cart-btn:hover {
+  background-color: #e0a800;
+  cursor: pointer;
+}
+
+/* Định dạng cho thẻ "Empty Cart" */
+.empty-cart {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ff0000;
+}
+
+.cart-icon {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
