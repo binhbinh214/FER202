@@ -1,26 +1,19 @@
 import React, { useState } from "react";
-
+import "../style/InputField.css";
 function InputField() {
-  // Declare state to hold the input text
   const [inputText, setInputText] = useState("");
 
-  // Handle input change
   const handleChange = (event) => {
     setInputText(event.target.value);
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
+    <div className="input-field-container">
       <input
         type="text"
         value={inputText}
         onChange={handleChange}
-        style={{
-          padding: "10px",
-          fontSize: "16px",
-          width: "300px",
-          marginBottom: "20px",
-        }}
+        className="input-field"
       />
       <h2>Input text: {inputText}</h2>
     </div>

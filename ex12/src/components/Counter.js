@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-
+import "../style/Counter.css";
 function Counter() {
-  // Khởi tạo state count là 0
   const [count, setCount] = useState(0);
 
   const incrementCount = () => {
@@ -9,14 +8,11 @@ function Counter() {
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <button
-        onClick={incrementCount}
-        style={{ padding: "10px 20px", fontSize: "16px" }}
-      >
+    <div className="counter-container">
+      <button onClick={incrementCount} className="increment-button">
         Increment
       </button>
-      <h2 style={{ marginTop: "20px" }}>Count: {count}</h2>
+      <h2 className="count-display">Count: {count}</h2>
     </div>
   );
 }

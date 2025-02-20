@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "../style/ToggleComponent.css";
 function ToggleComponent() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -8,15 +8,12 @@ function ToggleComponent() {
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <button
-        onClick={toggleVisibility}
-        style={{ padding: "10px 20px", fontSize: "16px", marginBottom: "20px" }}
-      >
+    <div className="toggle-container">
+      <button onClick={toggleVisibility} className="toggle-button">
         {isVisible ? "Hide" : "Show"}
       </button>
 
-      {isVisible && <h2>Toggle me!</h2>}
+      {isVisible && <h2 className="toggle-text">Toggle me!</h2>}
     </div>
   );
 }

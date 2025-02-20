@@ -1,0 +1,13 @@
+.counter-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.increment-button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.count-display {
+  margin-top: 20px;
+}

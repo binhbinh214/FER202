@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../style/ColorSwitcher.css"; // Import CSS
 
 function ColorSwitcher() {
   const [color, setColor] = useState("");
@@ -8,25 +9,8 @@ function ColorSwitcher() {
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "40vh",
-        flexDirection: "column",
-        textAlign: "center",
-      }}
-    >
-      <select
-        onChange={handleColorChange}
-        value={color}
-        style={{
-          padding: "10px",
-          fontSize: "16px",
-          marginBottom: "20px",
-        }}
-      >
+    <div className="container">
+      <select onChange={handleColorChange} value={color} className="select">
         <option value="">Select a color</option>
         <option value="red">Red</option>
         <option value="blue">Blue</option>
@@ -36,11 +20,9 @@ function ColorSwitcher() {
 
       {/* changes color */}
       <div
+        className="colorBox"
         style={{
-          width: "100px",
-          height: "100px",
           backgroundColor: color || "transparent",
-          transition: "background-color 0.3s ease",
         }}
       ></div>
     </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "../style/DragAndDropList.css";
 function DragAndDropList() {
   const [items, setItems] = useState([
     "Item 1",
@@ -31,9 +31,9 @@ function DragAndDropList() {
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
+    <div className="container">
       <h1>Drag and Drop List</h1>
-      <ul style={{ listStyleType: "none", padding: 0 }}>
+      <ul>
         {items.map((item, index) => (
           <li
             key={index}
@@ -42,16 +42,7 @@ function DragAndDropList() {
             onDragEnd={handleDragEnd}
             onDragOver={handleDragOver}
             onDrop={() => handleDrop(index)}
-            style={{
-              padding: "10px",
-              marginBottom: "5px",
-              backgroundColor: draggingItem === index ? "#ddd" : "#f0f0f0",
-              cursor: "move",
-              border: "1px solid #ccc",
-              borderRadius: "4px",
-              boxShadow:
-                draggingItem === index ? "0 2px 10px rgba(0,0,0,0.1)" : "none",
-            }}
+            className={draggingItem === index ? "dragging" : ""}
           >
             {item}
           </li>

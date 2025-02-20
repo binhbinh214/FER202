@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  flex-direction: column;
+  text-align: center;
+}
+
+.select {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.colorBox {
+  width: 100px;
+  height: 100px;
+  transition: background-color 0.3s ease;
+}
