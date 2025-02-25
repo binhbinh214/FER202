@@ -4,12 +4,14 @@ import "../assets/Quiz.css";
 import { data } from "./data.js";
 
 const Quiz = () => {
+  //Tạo hook State
   let [index, setIndex] = useState(0);
   let [question, setQuestion] = useState(data[index]);
   let [lock, setLock] = useState(false);
   let [score, setScore] = useState(0);
   let [result, setResult] = useState(false);
 
+  //Tham chiếu đến các option, trỏ tới các pt DOM
   let Option1 = useRef(null);
   let Option2 = useRef(null);
   let Option3 = useRef(null);
@@ -17,6 +19,7 @@ const Quiz = () => {
 
   let option_arr = [Option1, Option2, Option3, Option4];
 
+  //Check answer
   const checkAns = (e, ans) => {
     if (question.ans === ans) {
       e.target.classList.add("correct");
@@ -29,6 +32,7 @@ const Quiz = () => {
     }
   };
 
+  //Next question
   const next = () => {
     if (lock === true) {
       if (index === data.length - 1) {
@@ -46,6 +50,7 @@ const Quiz = () => {
     }
   };
 
+  //Reset quiz
   const reset = () => {
     setIndex(0);
     setQuestion(data[0]);
