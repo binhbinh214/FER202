@@ -1,0 +1,344 @@
+/* Import font Poppins từ Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Tổng quan ứng dụng */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  color: #2d3436;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1.text-center {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2d3436;
+  margin-bottom: 2.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Tùy chỉnh Tab */
+.nav-tabs {
+  border-bottom: none;
+}
+
+.nav-tabs .nav-link {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #636e72;
+  background: #ffffff;
+  border: none;
+  border-radius: 10px 10px 0 0;
+  padding: 0.8rem 1.5rem;
+  margin-right: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+  color: #fff;
+  background: linear-gradient(90deg, #6c5ce7 0%, #a29bfe 100%);
+  box-shadow: 0 4px 12px rgba(108, 92, 231, 0.3);
+}
+
+.nav-tabs .nav-link:hover {
+  color: #6c5ce7;
+  background: #f1f2f6;
+  transform: translateY(-2px);
+}
+
+/* Card chung cho các component */
+.card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Counter Component */
+.counter-container h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2d3436;
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+
+.counter-container .btn {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 0.6rem 1.8rem;
+  border-radius: 10px;
+  margin: 0 0.8rem;
+  background: linear-gradient(90deg, #6c5ce7 0%, #a29bfe 100%);
+  border: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.counter-container .btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #5a4dcd 0%, #8e7fe6 100%);
+  box-shadow: 0 4px 12px rgba(108, 92, 231, 0.4);
+}
+
+/* ChangeNameAge Component */
+.form-container .form-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d3436;
+  margin-bottom: 0.5rem;
+}
+
+.form-container .form-control {
+  border-radius: 10px;
+  border: 2px solid #dfe6e9;
+  padding: 0.8rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-container .form-control:focus {
+  border-color: #6c5ce7;
+  box-shadow: 0 0 8px rgba(108, 92, 231, 0.3);
+  outline: none;
+}
+
+.form-container h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #2d3436;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+/* ItemList Component */
+.item-list-container .form-group {
+  margin-bottom: 1.8rem;
+}
+
+.item-list-container .form-control {
+  border-radius: 10px;
+  border: 2px solid #dfe6e9;
+  padding: 0.8rem;
+}
+
+.item-list-container .btn-primary {
+  padding: 0.6rem 1.8rem;
+  background: linear-gradient(90deg, #6c5ce7 0%, #a29bfe 100%);
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.item-list-container .btn-primary:hover {
+  background: linear-gradient(90deg, #5a4dcd 0%, #8e7fe6 100%);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(108, 92, 231, 0.4);
+}
+
+.item-list-container h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2d3436;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.item-list-container .list-group-item {
+  border-radius: 12px;
+  margin-bottom: 0.8rem;
+  padding: 1.2rem;
+  background: #f7f9fc;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.item-list-container .list-group-item:hover {
+  background: #eef2f7;
+  transform: translateX(5px);
+}
+
+.item-list-container .btn {
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 500;
+}
+
+.item-list-container .btn-warning {
+  background: linear-gradient(90deg, #fdcb6e 0%, #ffeaa7 100%);
+  border: none;
+  color: #2d3436;
+}
+
+.item-list-container .btn-warning:hover {
+  background: linear-gradient(90deg, #f1b93f 0%, #ffd97d 100%);
+  transform: scale(1.05);
+}
+
+.item-list-container .btn-danger {
+  background: linear-gradient(90deg, #e17055 0%, #fab1a0 100%);
+  border: none;
+}
+
+.item-list-container .btn-danger:hover {
+  background: linear-gradient(90deg, #d35400 0%, #e67e22 100%);
+  transform: scale(1.05);
+}
+
+.item-list-container .btn-success {
+  background: linear-gradient(90deg, #00b894 0%, #55efc4 100%);
+  border: none;
+}
+
+.item-list-container .btn-success:hover {
+  background: linear-gradient(90deg, #009875 0%, #00d2a8 100%);
+  transform: scale(1.05);
+}
+
+/* QuestionBank Component */
+.quiz-container .progress {
+  height: 1.8rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  background: #dfe6e9;
+}
+
+.quiz-container .progress-bar {
+  background: linear-gradient(90deg, #6c5ce7 0%, #a29bfe 100%);
+  transition: width 0.5s ease-in-out;
+}
+
+.quiz-container h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2d3436;
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+
+.quiz-container .btn {
+  font-size: 1.1rem;
+  padding: 0.6rem 1.8rem;
+  margin: 0.6rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.quiz-container .btn-outline-secondary {
+  border: 2px solid #b2bec3;
+  color: #2d3436;
+  background: #fff;
+}
+
+.quiz-container .btn-outline-secondary:hover {
+  background: #f1f2f6;
+  border-color: #6c5ce7;
+  color: #6c5ce7;
+  transform: scale(1.05);
+}
+
+.quiz-container .btn-success {
+  background: linear-gradient(90deg, #00b894 0%, #55efc4 100%);
+  border: none;
+}
+
+.quiz-container .btn-success:hover {
+  background: linear-gradient(90deg, #009875 0%, #00d2a8 100%);
+  transform: scale(1.05);
+}
+
+.quiz-container .btn-primary {
+  background: linear-gradient(90deg, #6c5ce7 0%, #a29bfe 100%);
+  border: none;
+}
+
+.quiz-container .btn-primary:hover {
+  background: linear-gradient(90deg, #5a4dcd 0%, #8e7fe6 100%);
+  transform: scale(1.05);
+}
+
+.quiz-container .feedback {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 1.5rem 0;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.quiz-container .time-left {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.quiz-container .text-center h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #2d3436;
+}
+
+.quiz-container .text-center h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #636e72;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1.text-center {
+    font-size: 2.2rem;
+  }
+
+  .card {
+    padding: 1.8rem;
+  }
+
+  .nav-tabs .nav-link {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .counter-container h3 {
+    font-size: 1.6rem;
+  }
+
+  .form-container h3 {
+    font-size: 1.3rem;
+  }
+
+  .item-list-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .quiz-container h4 {
+    font-size: 1.5rem;
+  }
+
+  .quiz-container .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
