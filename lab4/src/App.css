@@ -1,0 +1,254 @@
+/* Import font từ Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* Tổng quan ứng dụng */
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #0a192f 0%, #172a45 100%);
+  color: #ccd6f6;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Container chính */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Tiêu đề chính */
+.app-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #64ffda;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(100, 255, 218, 0.8);
+  }
+}
+
+/* Card của Quiz */
+.quiz-card {
+  border: none;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  padding: 2.5rem;
+  transition: all 0.4s ease;
+}
+
+.quiz-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(100, 255, 218, 0.2);
+}
+
+/* Container bên trong Quiz */
+.quiz-container {
+  color: #ccd6f6;
+}
+
+/* Tiêu đề trong Quiz */
+.quiz-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #64ffda;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Form */
+.form-label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ccd6f6;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 0.8rem;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: #ccd6f6;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #64ffda;
+  box-shadow: 0 0 12px rgba(100, 255, 218, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Nút thêm câu hỏi */
+.btn-add-question {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.7rem 2rem;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #00ddeb 0%, #64ffda 100%);
+  border: none;
+  color: #0a192f;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(100, 255, 218, 0.4);
+}
+
+.btn-add-question:hover {
+  background: linear-gradient(90deg, #00b4b8 0%, #00ddeb 100%);
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(100, 255, 218, 0.6);
+}
+
+/* Phân cách giữa phần thêm câu hỏi và quiz */
+.hr {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 2rem 0;
+}
+
+/* Câu hỏi quiz */
+.quiz-question {
+  margin-top: 2rem;
+}
+
+.quiz-question h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.question-text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 1.5rem;
+}
+
+.form-check-label {
+  font-size: 1.2rem;
+  color: rgb(105, 92, 92);
+  padding-left: 0.5rem;
+}
+
+.form-check-input {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+  accent-color: #64ffda;
+}
+
+/* Nút Next */
+.btn-next {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.7rem 2rem;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #ff4757 0%, #ff6b81 100%);
+  border: none;
+  color: #fff;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+}
+
+.btn-next:hover {
+  background: linear-gradient(90deg, #e84118 0%, #e84393 100%);
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(255, 71, 87, 0.6);
+}
+
+.btn-next:disabled {
+  background: #7f8c8d;
+  cursor: not-allowed;
+}
+
+/* Giao diện điểm số */
+.score-display {
+  padding: 2rem;
+}
+
+.score-text {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ccd6f6;
+  margin-bottom: 2rem;
+}
+
+/* Nút Restart */
+.btn-restart {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.7rem 2rem;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #ff6b81 0%, #ff4757 100%);
+  border: none;
+  color: #fff;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 129, 0.4);
+}
+
+.btn-restart:hover {
+  background: linear-gradient(90deg, #e84393 0%, #e84118 100%);
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(255, 107, 129, 0.6);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-title {
+    font-size: 2.2rem;
+  }
+
+  .quiz-card {
+    padding: 2rem;
+  }
+
+  .quiz-title {
+    font-size: 1.7rem;
+  }
+
+  .quiz-question h3 {
+    font-size: 1.5rem;
+  }
+
+  .question-text {
+    font-size: 1.4rem;
+  }
+
+  .form-check-label {
+    font-size: 1rem;
+  }
+
+  .btn-next,
+  .btn-restart {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+
+  .score-text {
+    font-size: 1.7rem;
+  }
+}
