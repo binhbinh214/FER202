@@ -1,0 +1,53 @@
+/* App.css */
+
+/* Căn chỉnh toàn bộ trang */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9; /* Màu nền sáng */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container cho ứng dụng */
+.app-container {
+  display: flex;
+  flex-direction: column; /* Các phần tử căn theo chiều dọc */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px; /* Giới hạn chiều rộng của container */
+}
+
+/* Tiêu đề */
+h1, h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Nút bấm */
+button {
+  padding: 15px;
+  margin: 10px 0;
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Khi hover vào nút */
+button:hover {
+  background-color: #0056b3;
+}
