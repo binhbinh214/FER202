@@ -1,0 +1,136 @@
+.quiz-container {
+  width: 50rem;
+  height: 35rem;
+  background-color: rgb(39, 206, 151);
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 60px;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container .active-question-no {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #150080;
+  font-family: "Arial", sans-serif;
+}
+
+.quiz-container .total-question {
+  font-size: 1.5625rem;
+  font-weight: 500;
+  color: #9c9c9c;
+  font-family: "Arial", sans-serif;
+}
+
+.quiz-container h2 {
+  font-size: 1.5625rem;
+  font-weight: 500;
+  margin: 0;
+  color: #000000;
+  font-family: "Arial", sans-serif;
+}
+
+.quiz-container ul {
+  margin-top: 20px;
+  margin-left: -40px;
+}
+
+.quiz-container ul li {
+  text-decoration: none;
+  list-style: none;
+  color: #2d246b;
+  background: #f9f9f9;
+  font-size: 1.5625rem;
+  border: 1px solid #9c9c9c;
+  border-radius: 16px;
+  padding: 12px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-container ul .selected-answer {
+  background: #ffff00;
+  border: 1px solid #d08642;
+  color: #000000;
+}
+
+.quiz-container .footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.quiz-container button {
+  position: absolute;
+  bottom: 3rem;
+  right: 9rem;
+  background: #e0e549;
+  border-radius: 10px;
+  font-size: 1.5625rem;
+  color: #000000;
+  padding: 12px 45px;
+  outline: none;
+  border: none;
+  margin-top: 3rem;
+  cursor: pointer;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-container button:disabled {
+  background: #e7e8e9;
+  color: #9c9c9c;
+  cursor: not-allowed;
+}
+
+.quiz-container .result h3 {
+  font-size: 2.1875rem;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-align: center;
+  color: #333333;
+  font-family: "Arial", sans-serif;
+}
+
+.quiz-container .result p {
+  font-size: 1.5625rem;
+  font-weight: 500;
+  color: #333333;
+  font-family: "Arial", sans-serif;
+}
+
+.quiz-container .result p span {
+  color: #ffff00;
+  font-size: 1.5625rem;
+  font-weight: bold;
+}
+
+.quiz-container .result button {
+  display: block;
+  margin: 0 auto;
+  background: #e0e549;
+  border-radius: 10px;
+  padding: 12px 45px;
+  font-size: 1.5625rem;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-container .result button:hover {
+  background: #d4d941;
+}
+
+.container .name {
+  font-size: 2rem;
+  color: #ff3333;
+  text-align: center;
+  margin-top: 0.67em;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+}

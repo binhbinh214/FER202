@@ -1,0 +1,152 @@
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin: 0; /* Loại bỏ margin mặc định của body */
+  padding: 0; /* Loại bỏ padding mặc định của body */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0 25rem;
+  background: #2b2d42;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  transition: padding 0.5s ease;
+  margin: 0; /* Loại bỏ margin của navbar */
+}
+
+.slider {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0; /* Loại bỏ margin của slider */
+  padding: 0; /* Loại bỏ padding của slider */
+}
+
+.slider img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.slider .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.slider .arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.slider .left-arrow {
+  left: 10px;
+}
+
+.slider .right-arrow {
+  right: 10px;
+}
+
+.slider .dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.slider .dot {
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+.slider .dot.active {
+  background: #e63946;
+  opacity: 1;
+}
+
+.slider .dot:hover {
+  opacity: 1;
+}
+
+.best-sellers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+.best-sellers h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #212529;
+  width: 100%;
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 12%;
+  transition: transform 0.3s ease-in-out;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.product p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #e63946;
+  width: 100%;
+  font-family: "Arial", sans-serif;
+  font-weight: 500;
+}
+
+.product:hover {
+  transform: scale(1.15);
+}

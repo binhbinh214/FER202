@@ -1,0 +1,262 @@
+/* Container chính của ứng dụng */
+.app-container {
+  padding: 40px;
+  font-family: "Poppins", sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+/* Tiêu đề chính */
+h1 {
+  text-align: center;
+  color: #2d3436;
+  margin-bottom: 40px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style cho Tabs */
+.nav-tabs {
+  border-bottom: 3px solid #6c5ce7;
+  background: #fff;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.nav-tabs .nav-link {
+  color: #636e72;
+  font-weight: 600;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin: 0 5px;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #fff;
+  background: #a29bfe;
+  transform: translateY(-2px);
+}
+
+.nav-tabs .nav-link.active {
+  color: #fff;
+  background: #6c5ce7;
+  border-bottom: none;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(108, 92, 231, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Nội dung trong tab */
+.tab-content {
+  padding: 30px;
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animation cho tab-content */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Style cho UserProfile */
+.user-profile {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: linear-gradient(145deg, #dfe6e9, #ffffff);
+  border-radius: 10px;
+  border: 1px solid #b2bec3;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-profile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile h3 {
+  color: #6c5ce7;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.user-profile p {
+  margin: 8px 0;
+  font-size: 1.1rem;
+  color: #2d3436;
+}
+
+.user-profile p.error {
+  color: #d63031;
+  font-weight: 700;
+  background: #ffeaa7;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Container cho form */
+.form-container {
+  padding: 20px;
+}
+
+/* Form heading */
+.form-container h3 {
+  color: #6c5ce7;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 25px;
+  position: relative; /* Để định vị tích xanh */
+}
+
+.form-label {
+  font-weight: 600;
+  color: #2d3436;
+  font-size: 1.1rem;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #b2bec3;
+  padding: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #f9f9f9;
+  padding-right: 30px; /* Để chừa chỗ cho tích xanh */
+}
+
+.form-control:focus {
+  border-color: #6c5ce7;
+  box-shadow: 0 0 8px rgba(108, 92, 231, 0.3);
+  background: #fff;
+}
+
+.form-control.is-invalid {
+  border-color: #d63031;
+  background: #fff5f5;
+}
+
+/* Tích xanh khi input hợp lệ */
+.form-control.is-valid {
+  border-color: #00b894;
+  background: #fff;
+}
+
+.form-control.is-valid::after {
+  content: "✔";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #00b894;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Điều chỉnh cho checkbox */
+.form-check-input.is-valid {
+  border-color: #00b894;
+  background-color: #00b894;
+}
+
+.form-check-input.is-valid::after {
+  content: none; /* Không hiển thị tích xanh trong checkbox */
+}
+
+.invalid-feedback {
+  font-size: 0.95rem;
+  color: #d63031;
+  font-weight: 500;
+}
+
+/* Button styles */
+.btn-primary {
+  background: #6c5ce7;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.btn-primary:hover {
+  background: #5a4bc5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(108, 92, 231, 0.3);
+}
+
+/* Alert styles */
+.alert-danger {
+  background: #fab1a0;
+  color: #d63031;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 10px rgba(214, 48, 49, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .nav-tabs .nav-link {
+    padding: 10px 15px;
+    font-size: 0.95rem;
+  }
+
+  .tab-content,
+  .form-container {
+    padding: 15px;
+  }
+
+  .user-profile h3,
+  .form-container h3 {
+    font-size: 1.4rem;
+  }
+
+  .form-control {
+    font-size: 0.95rem;
+    padding: 10px;
+    padding-right: 25px; /* Điều chỉnh cho tích xanh */
+  }
+
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .user-profile {
+    padding: 15px;
+  }
+}
