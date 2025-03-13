@@ -1,0 +1,29 @@
+.user-detail {
+  padding: 60px 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1s ease-out;
+}
+
+.user-detail h2 {
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.user-detail p {
+  margin: 15px 0;
+  color: #555;
+  font-size: 1.2em;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.user-detail strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
