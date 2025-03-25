@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   padding: 0 25rem;
-  background: #2b2d42;
+  background: #3a696f;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
   transition: padding 0.5s ease;
 }
@@ -37,7 +37,7 @@
 
 .nav-link a:hover {
   color: #000000;
-  background-color: #ffd60a;
+  background-color: #29af4b;
   transform: scale(1.05);
 }
 

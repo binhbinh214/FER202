@@ -4,10 +4,6 @@ import "../assets/Navbar.css";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <a className="navbar-brand" href="/">
-        My Shop
-      </a>
-
       <ul className="nav-link">
         <Link to="/">
           <li>Home</li>
